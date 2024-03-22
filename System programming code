@@ -1,0 +1,59 @@
+#prompt user
+echo "Enter CustomerID"
+read Customer ID
+echo "Enter CustomerName"
+read CustomerName
+echo "UnitConsumed"
+read UnitConsumed
+if [UnitConsumed _le 199];then
+charge=$(echo "$UnitConsumed  * 120"|bc)
+elif[$UnitConsumed_ge 200]&&[$UnitConsumed_lt 400];then
+charge=$(echo "UnitConsumed * 150" |bc)
+elif[$UnitConsumed_ge 400]&&[$UnitConsumed_lt 600];then
+charge=$(echo "UnitConsumed * 180" |bc)
+else
+charge=$(echo "$UnitConsumed *200|bc)
+if [$Charge_gt 400];then
+surcharge=$(echo"$Charge *0.20"|bc)
+TotalBill=$(echo "$Charge + $Surcharge" |bc)
+else
+TotalBill=$Charge
+echo "Customer ID :$CustomerID"
+echo "Customer Name :$CustomerName"
+echo"TotalBill:Ksh $TotalBill"9
+
+
+
+
+Question 2;
+#prompt user for input
+read_p"enter employee name:"name
+read_p"enter hours worked:"hours
+read,p"enter rate per hour:"rate
+#calculate basic pay
+basic pay=$(echo"Shours Srate"|bc
+#calculate tax based on basic pay
+if(basic_pay_gt 700) then tax=$
+(echo "0.25*basic_pay"|bc) elif
+[Sbasic_pay_age 15000];then tax=$(echo"0.15*basic_pay"|bc)
+else
+tax=0
+#calculate net pay
+net pay$(echo "Sbasic_pay -Stax"|bc)
+#display results
+echo 'Employee:Sname"
+echo "Basic pay: Sbasic_pay"
+echo "Tax:Stax"
+
+
+Question 3;
+#include<stdio.h>
+int fd;
+charcontent()="Hello World";
+fd=open("file.txt",O_CREAT | O_WRONGLY,0644);
+int bytes_written=write(fd,content,sizeof(content);
+Iseek(fd,O,SEEK_SET);
+charread_content[sizeof(content)];
+int bytes_read=read(fd,read_content,sixeof(read_content));
+printf("content read from file:%s\n",read_content);
+close(fd);
